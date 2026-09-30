@@ -6,7 +6,7 @@ This project showcases how a restaurant can present its menu, atmosphere, story,
 
 🌐 Live Demo
 
-🔗 https://theyashwebs-code.github.io/YashWebs-restaurant/
+🔗 https://theyashwebs-code.github.io/YashWebs-Restaurant-Demo/
 
 ✨ Features
 🍽️ Premium restaurant landing page
