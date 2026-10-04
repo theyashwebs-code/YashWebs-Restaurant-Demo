@@ -1,21 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Maison Élan — European Restaurant Demo</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sunday Press Café — Burgers, Sandwiches & Cold-Pressed Juices</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#1c211c;--cream:#f3efe6;--paper:#faf8f2;--wine:#6b2633;--olive:#59604a;--gold:#b9965b;--line:rgba(28,33,28,.16)}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;font-weight:300;line-height:1.6}img{width:100%;display:block}a{text-decoration:none;color:inherit}button{font:inherit;cursor:pointer}.container{width:min(1180px,90%);margin:auto}.topbar{background:var(--ink);color:#eee9dd;text-align:center;font-size:10px;letter-spacing:3px;text-transform:uppercase;padding:9px}nav{position:absolute;top:38px;left:0;width:100%;z-index:20;color:white;display:flex;justify-content:space-between;align-items:center;padding:0 5%}.logo{font-family:"Cormorant Garamond";font-size:30px;letter-spacing:3px}.navlinks{display:flex;gap:32px;font-size:11px;letter-spacing:2px;text-transform:uppercase}.navlinks a{opacity:.9}.reserve{border:1px solid rgba(255,255,255,.6);padding:11px 17px}.hero{height:94vh;min-height:650px;position:relative;color:white;display:flex;align-items:flex-end;overflow:hidden}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.34),rgba(0,0,0,.12) 45%,rgba(0,0,0,.7))}.hero img{position:absolute;inset:0;height:100%;object-fit:cover;filter:saturate(.75)}.hero-content{position:relative;z-index:2;width:min(1180px,90%);margin:0 auto 9vh}.kicker,.eyebrow{font-size:10px;letter-spacing:5px;text-transform:uppercase}.kicker{margin-bottom:18px}.hero h1{font:600 clamp(64px,10vw,145px)/.8 "Cormorant Garamond";letter-spacing:-4px}.hero-sub{max-width:470px;margin-top:28px;font-size:15px}.hero-actions{display:flex;gap:12px;margin-top:30px}.btn{display:inline-flex;padding:14px 23px;border:1px solid white;font-size:10px;letter-spacing:2px;text-transform:uppercase}.btn.fill{background:#fff;color:var(--ink)}.scroll{position:absolute;right:5%;bottom:40px;z-index:3;writing-mode:vertical-rl;font-size:9px;letter-spacing:3px;text-transform:uppercase}.intro{padding:120px 0;background:var(--cream)}.intro-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:100px;align-items:center}.eyebrow{color:var(--wine);margin-bottom:18px}h2{font:600 clamp(48px,6vw,78px)/.9 "Cormorant Garamond";letter-spacing:-2px}.intro p{font-size:16px;max-width:570px;color:#55594f}.signature{font:500 25px "Cormorant Garamond";margin-top:25px}.intro-photo{height:560px;object-fit:cover}.section{padding:115px 0}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:55px}.section-head p{max-width:390px;font-size:13px;color:#666b60}.menu{background:var(--ink);color:#f2eee4}.menu .eyebrow{color:#c6a86d}.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.menu-col{border-top:1px solid rgba(255,255,255,.2)}.menu-item{padding:24px 0;border-bottom:1px solid rgba(255,255,255,.13);display:grid;grid-template-columns:1fr auto;gap:20px}.menu-item h3{font:500 29px "Cormorant Garamond"}.menu-item p{font-size:11px;color:#aaa99f;margin-top:3px}.price{font:500 20px "Cormorant Garamond";color:#c6a86d}.gallery-grid{display:grid;grid-template-columns:1.25fr .8fr .8fr;grid-template-rows:280px 280px;gap:15px}.gallery-grid img{height:100%;object-fit:cover;filter:saturate(.75)}.g1{grid-row:span 2}.g4{grid-column:2/span 2}.philosophy{background:#e7e1d4}.philo-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:100px;align-items:center}.quote{font:500 clamp(38px,5vw,66px)/.95 "Cormorant Garamond"}.quote span{color:var(--wine)}.reservation{background:var(--wine);color:#f7f1e7}.reservation-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px}.reservation .eyebrow{color:#e1c68d}.form{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form input,.form select{background:transparent;border:1px solid rgba(255,255,255,.35);padding:15px;color:white;outline:none}.form select option{color:#111}.wide,.form button{grid-column:1/-1}.form button{border:0;background:#f5eee2;color:var(--ink);padding:16px;letter-spacing:2px;text-transform:uppercase;font-size:10px}.contact{padding:70px 0;background:#11150f;color:#eee9dd}.contact-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:35px}.contact h4{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#bfa36d;margin-bottom:12px}.contact p,.contact a{font-size:12px;color:#aaa99f}.footer{border-top:1px solid rgba(255,255,255,.1);margin-top:45px;padding-top:22px;font-size:9px;letter-spacing:2px;color:#777}@media(max-width:800px){nav{top:25px}.navlinks{display:none}.hero{min-height:600px}.hero h1{letter-spacing:-2px}.intro-grid,.philo-grid,.reservation-grid{grid-template-columns:1fr;gap:45px}.intro-photo{height:420px}.menu-grid{grid-template-columns:1fr;gap:45px}.section-head{display:block}.section-head p{margin-top:20px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:230px 230px 230px}.g1{grid-row:span 2}.g4{grid-column:1/-1}.form{grid-template-columns:1fr}.wide,.form button{grid-column:auto}.contact-grid{grid-template-columns:1fr 1fr}.contact-grid .brand{grid-column:1/-1}}
+:root{--bg:#fffcf3;--ink:#10201a;--mut:#5b6a62;--green:#14352b;--butter:#f6e27a;--orange:#ff6a2b;--card:#fff;--line:rgba(16,32,26,.14);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a15;--ink:#f4f1e4;--mut:#a3b0a8;--card:#162a22;--line:rgba(244,241,228,.16)}}
+:root[data-theme="dark"]{--bg:#0e1a15;--ink:#f4f1e4;--mut:#a3b0a8;--card:#162a22;--line:rgba(244,241,228,.16)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3,.disp{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;line-height:.95}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:800 22px "Bricolage Grotesque";letter-spacing:-.03em}.logo b{color:var(--orange)}
+nav{display:flex;gap:26px;font-size:14px;font-weight:500}nav a:hover{color:var(--orange)}
+.cartbtn{background:var(--green);color:#fff;border:0;border-radius:99px;padding:10px 18px;font-size:14px;font-weight:500;display:flex;gap:8px;align-items:center}
+.cartbtn span{background:var(--butter);color:var(--green);border-radius:99px;min-width:22px;height:22px;display:grid;place-items:center;font-size:12px;font-weight:700}
+.hero{background:var(--green);color:#f7f3e2;overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:80px 0 90px}
+.hero h1{font-size:clamp(54px,8.4vw,118px)}.hero h1 em{font-style:normal;color:var(--butter)}
+.hero p{max-width:440px;margin:26px 0 32px;color:#cfd9cf;font-size:18px}
+.btn{display:inline-block;border-radius:99px;padding:15px 28px;font-weight:600;font-size:15px;border:0;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}.btn.o{background:var(--orange);color:#fff}.btn.g{border:1.5px solid rgba(255,255,255,.4);margin-left:8px;color:#fff}
+.stack{position:relative;height:430px}
+.t{position:absolute;display:grid;place-items:center;border-radius:50%;box-shadow:0 20px 40px rgba(0,0,0,.28);animation:pop .8s cubic-bezier(.2,1.3,.4,1) both}
+.t1{width:270px;height:270px;background:var(--butter);font-size:140px;left:12%;top:0;animation-delay:.1s}
+.t2{width:190px;height:190px;background:var(--orange);font-size:96px;right:0;top:150px;animation-delay:.3s}
+.t3{width:160px;height:160px;background:#8fd19e;font-size:80px;left:0;bottom:0;animation-delay:.5s}
+@keyframes pop{from{transform:scale(.3) rotate(-25deg);opacity:0}}
+.tick{background:var(--butter);color:var(--green);overflow:hidden;white-space:nowrap;font:800 22px "Bricolage Grotesque";padding:14px 0;letter-spacing:-.01em}
+.tick div{display:inline-block;animation:slide 28s linear infinite}@keyframes slide{to{transform:translateX(-50%)}}
+section{padding:96px 0}.sh{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:36px}
+h2{font-size:clamp(40px,5.6vw,72px)}.sh p{max-width:360px;color:var(--mut)}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:34px}
+.tab{border:1.5px solid var(--line);background:transparent;border-radius:99px;padding:10px 20px;font-weight:500;font-size:15px}
+.tab[aria-selected=true]{background:var(--green);border-color:var(--green);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:26px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.item:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(16,32,26,.12)}
+.pic{height:190px;display:grid;place-items:center;font-size:92px;position:relative}
+.tag{position:absolute;top:14px;left:14px;background:var(--bg);color:var(--ink);font-size:12px;font-weight:600;padding:4px 11px;border-radius:99px}
+.info{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.info h3{font-size:25px;margin-bottom:6px}.info p{color:var(--mut);font-size:14px;flex:1}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:18px}
+.price{font:800 22px "Bricolage Grotesque"}
+.add{background:var(--orange);color:#fff;border:0;border-radius:99px;width:42px;height:42px;font-size:22px;line-height:1;transition:transform .15s}.add:active{transform:scale(.88)}
+.story{background:var(--butter);color:var(--green)}
+.story .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.story p{font-size:18px;max-width:480px;margin-top:22px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fact{background:var(--green);color:#f7f3e2;border-radius:26px;padding:28px}.fact b{display:block;font:800 46px "Bricolage Grotesque";color:var(--butter);letter-spacing:-.04em}
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:34px}
+.card h3{font-size:30px;margin-bottom:16px}.hrs{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)}
+form{display:grid;gap:12px}
+input,select{width:100%;padding:14px 16px;border-radius:14px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+footer{background:var(--green);color:#b9c7bd;padding:50px 0 40px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}footer .logo{color:#fff}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(400px,100%);background:var(--bg);z-index:50;transform:translateX(105%);transition:transform .35s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;box-shadow:-20px 0 50px rgba(0,0,0,.25);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.drawer.open{transform:none}.dh{display:flex;justify-content:space-between;align-items:center;padding:22px 24px;border-bottom:1px solid var(--line)}.dh h3{font-size:28px}
+.dh button{background:none;border:0;font-size:28px}.lines{flex:1;overflow:auto;padding:10px 24px}
+.ln{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.ln .e{font-size:30px}.ln small{color:var(--mut)}
+.q{display:flex;align-items:center;gap:8px}.q button{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--line);background:none}
+.empty{color:var(--mut);text-align:center;padding:50px 0}
+.df{padding:20px 24px;border-top:1px solid var(--line)}.tot{display:flex;justify-content:space-between;font:800 24px "Bricolage Grotesque";margin-bottom:14px}.df .btn{width:100%;text-align:center}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:40;opacity:0;pointer-events:none;transition:opacity .3s}.scrim.open{opacity:1;pointer-events:auto}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,120px);background:var(--ink);color:var(--bg);padding:12px 22px;border-radius:99px;z-index:60;transition:transform .3s;font-weight:500}.toast.on{transform:translate(-50%,0)}
+@media(max-width:800px){nav{display:none}.hero .wrap,.story .wrap,.visit .wrap{grid-template-columns:1fr}.hero .wrap{padding:50px 0 60px}.stack{height:320px}.t1{width:200px;height:200px;font-size:100px}.t2{width:140px;height:140px;font-size:70px;top:120px}.t3{width:110px;height:110px;font-size:54px}section{padding:64px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style></head>
 <body>
-<div class="topbar">Seasonal tasting menu · Paris-inspired European dining · Reservations recommended</div>
-<nav><a class="logo" href="#">MAISON ÉLAN</a><div class="navlinks"><a href="#story">Our Story</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a><a class="reserve" href="#reserve">Reserve</a></div></nav>
-<header class="hero"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2200&q=90" alt="Elegant European restaurant"><div class="hero-content"><div class="kicker">European Restaurant · Since 2012</div><h1>Maison<br>Élan</h1><p class="hero-sub">Seasonal cuisine, thoughtful wine and the quiet pleasure of taking your time.</p><div class="hero-actions"><a class="btn fill" href="#reserve">Reserve a Table</a><a class="btn" href="#menu">View Menu</a></div></div><div class="scroll">Scroll to discover ↓</div></header>
-<section class="intro" id="story"><div class="container intro-grid"><div><div class="eyebrow">The House</div><h2>A table for<br>slow evenings.</h2><p style="margin-top:28px">Maison Élan is a fictional restaurant demo inspired by the understated elegance of European dining rooms. Our kitchen follows the seasons, our menu changes with the market, and every plate is designed to feel simple, generous and memorable.</p><div class="signature">Good food. Good wine. Good company.</div></div><img class="intro-photo" src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=90" alt="European dining room"></div></section>
-<section class="section menu" id="menu"><div class="container"><div class="section-head"><div><div class="eyebrow">À La Carte</div><h2>The Menu</h2></div><p>A concise seasonal selection. Ingredients and dishes change throughout the year according to the market.</p></div><div class="menu-grid"><div class="menu-col"><div class="menu-item"><div><h3>Whipped Burrata</h3><p>Heirloom tomato, basil oil, sea salt</p></div><div class="price">€14</div></div><div class="menu-item"><div><h3>Forest Mushroom</h3><p>Wild mushrooms, thyme, sourdough crisp</p></div><div class="price">€16</div></div><div class="menu-item"><div><h3>Beetroot & Citrus</h3><p>Roasted beetroot, orange, hazelnut</p></div><div class="price">€13</div></div><div class="menu-item"><div><h3>Sea Bass</h3><p>Lemon beurre blanc, fennel, capers</p></div><div class="price">€32</div></div></div><div class="menu-col"><div class="menu-item"><div><h3>Truffle Risotto</h3><p>Aged parmesan, wild herbs, black truffle</p></div><div class="price">€26</div></div><div class="menu-item"><div><h3>Beef Tenderloin</h3><p>Red wine jus, potato fondant, greens</p></div><div class="price">€39</div></div><div class="menu-item"><div><h3>Roasted Cauliflower</h3><p>Almond cream, capers, herbs</p></div><div class="price">€21</div></div><div class="menu-item"><div><h3>Dark Chocolate</h3><p>70% chocolate, sea salt, olive oil</p></div><div class="price">€12</div></div></div></div></div></section>
-<section class="section" id="gallery"><div class="container"><div class="section-head"><div><div class="eyebrow">Inside Maison Élan</div><h2>The Atmosphere</h2></div><p>Warm light, natural textures and a room designed for long lunches and late dinners.</p></div><div class="gallery-grid"><img class="g1" src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1200&q=90" alt="Restaurant interior"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=90" alt="Dish"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=90" alt="Dining room"><img class="g4" src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1300&q=90" alt="Restaurant table"></div></div></section>
-<section class="section philosophy"><div class="container philo-grid"><div><div class="eyebrow">Our Philosophy</div><h2>Less noise.<br>More flavour.</h2></div><div class="quote">“The best evenings are rarely rushed. <span>They unfold</span> one course, one glass and one conversation at a time.”</div></div></section>
-<section class="section reservation" id="reserve"><div class="container reservation-grid"><div><div class="eyebrow">Reservations</div><h2>Join us<br>for dinner.</h2><p style="margin-top:25px;max-width:430px;opacity:.75">For groups larger than six, private dining or dietary requirements, please contact the restaurant directly.</p><p style="margin-top:25px;font-size:12px">Tuesday — Saturday · 18:00 — 23:00<br>12 Rue des Lumières · Paris</p></div><form class="form" onsubmit="book(event)"><input required placeholder="Your name"><input required type="email" placeholder="Email address"><input required type="date"><select required><option value="">Time</option><option>18:00</option><option>19:00</option><option>20:00</option><option>21:00</option></select><select required><option value="">Guests</option><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option></select><input placeholder="Special request" class="wide"><button>Request a Table</button></form></div></section>
-<footer class="contact" id="contact"><div class="container"><div class="contact-grid"><div class="brand"><div class="logo">MAISON ÉLAN</div><p style="margin-top:12px;max-width:270px">A fictional European restaurant website demo crafted for hospitality businesses.</p></div><div><h4>Visit</h4><p>12 Rue des Lumières<br>Paris, France</p></div><div><h4>Hours</h4><p>Tue — Sat<br>18:00 — 23:00</p></div><div><h4>Contact</h4><p><a href="tel:+33100000000">+33 1 00 00 00 00</a><br><a href="mailto:hello@maisonelan.demo">hello@maisonelan.demo</a></p></div></div><div class="footer">© 2026 MAISON ÉLAN · RESTAURANT WEBSITE DEMO · ALL CONTENT IS FICTIONAL</div></div></footer>
-<script>function book(e){e.preventDefault();const b=e.target.querySelector('button');b.textContent='Request Received ✓';setTimeout(()=>b.textContent='Request a Table',2500)}</script>
+<header><div class="wrap bar"><a class="logo" href="#">Sunday Press<b>.</b></a><nav><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#visit">Visit</a></nav><button class="cartbtn" id="open" aria-label="Open order">Your order <span id="cnt">0</span></button></div></header>
+
+<div class="hero"><div class="wrap"><div><h1>Stacked tall.<br><em>Pressed fresh.</em></h1><p>Smash burgers, toasted sandwiches and cold-pressed juices, made from scratch every morning at the corner of Elm &amp; 5th.</p><a class="btn o" href="#menu">Order now</a><a class="btn g" href="#visit">Book a table</a></div>
+<div class="stack" aria-hidden="true"><div class="t t1">🍔</div><div class="t t2">🥤</div><div class="t t3">🥪</div></div></div></div>
+<div class="tick" aria-hidden="true"><div>Smash burgers • Toasted sandwiches • Cold-pressed juice • Single-origin coffee • Baked daily • Smash burgers • Toasted sandwiches • Cold-pressed juice • Single-origin coffee • Baked daily • </div></div>
+
+<section id="menu"><div class="wrap"><div class="sh"><h2>The menu</h2><p>Everything is made to order. Tap + to build your order, then check out from the basket.</p></div>
+<div class="tabs" role="tablist" id="tabs"></div><div class="grid" id="grid"></div></div></section>
+
+<section class="story" id="story"><div class="wrap"><div><h2>Small kitchen. Big appetite.</h2><p>We bake our brioche every morning, grind our beef in-house and press juice to order, so nothing sits in a fridge waiting for you. No shortcuts, no sauces from a bottle.</p></div>
+<div class="facts"><div class="fact"><b>6am</b>Brioche out of the oven</div><div class="fact"><b>100%</b>Fresh, never frozen beef</div><div class="fact"><b>12</b>Local farms we buy from</div><div class="fact"><b>0</b>Refined sugar in our juices</div></div></div></section>
+
+<section class="visit" id="visit"><div class="wrap"><div class="card"><h3>Opening hours</h3><div class="hrs"><span>Mon – Fri</span><b>7:30 – 21:00</b></div><div class="hrs"><span>Saturday</span><b>8:00 – 22:00</b></div><div class="hrs"><span>Sunday</span><b>8:00 – 20:00</b></div><p style="margin-top:22px;color:var(--mut)">24 Elm Street, Downtown<br>hello@sundaypress.cafe · +1 555 010 2030</p></div>
+<div class="card"><h3>Book a table</h3><form onsubmit="bk(event)"><input required placeholder="Your name" aria-label="Name"><div class="two"><input required type="date" aria-label="Date"><select required aria-label="Guests"><option value="">Guests</option><option>1–2</option><option>3–4</option><option>5–6</option></select></div><button class="btn o" id="bkb">Reserve</button></form></div></div></section>
+
+<footer><div class="wrap"><div><div class="logo">Sunday Press.</div><p style="margin-top:8px">Burgers, sandwiches &amp; juice, made fresh.</p></div><p>© 2026 Sunday Press Café. Demo content.</p></div></footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Your order"><div class="dh"><h3>Your order</h3><button id="close" aria-label="Close">×</button></div><div class="lines" id="lines"></div><div class="df"><div class="tot"><span>Total</span><span id="tot">$0.00</span></div><button class="btn o" id="co">Place order</button></div></aside>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const M={
+Burgers:{c:'#ffd9b3',i:[['The Press Burger','Double smash patty, aged cheddar, pickles, house sauce, brioche',11.5,'🍔','Bestseller'],['Truffle Mushroom','Beef, roasted mushroom, swiss, truffle mayo, rocket',13,'🍔',''],['Crispy Chicken','Buttermilk chicken, slaw, hot honey, brioche',10.5,'🍗','Spicy'],['Garden Smash','Plant patty, avocado, tomato, vegan aioli',11,'🥬','Vegan']]},
+Sandwiches:{c:'#e3f1c4',i:[['Turkey Pesto Melt','Roast turkey, basil pesto, mozzarella, sourdough',9.5,'🥪','Toasted'],['Caprese Ciabatta','Tomato, buffalo mozzarella, basil, balsamic',8.5,'🥖','Veg'],['Smoked Salmon Bagel','Cream cheese, capers, red onion, dill',11,'🥯',''],['Classic Club','Chicken, bacon, egg, lettuce, tomato, mayo',10,'🥪','']]},
+Juices:{c:'#ffe58a',i:[['Green Glow','Apple, spinach, cucumber, ginger, lime',6.5,'🥬','Cold-pressed'],['Sunrise','Orange, carrot, turmeric, lemon',6,'🍊',''],['Watermelon Cooler','Watermelon, mint, lime, a pinch of salt',6,'🍉','Seasonal'],['Berry Beet','Beetroot, strawberry, apple, ginger',6.5,'🍓','']]},
+Coffee:{c:'#e8d3bf',i:[['Flat White','Double espresso, silky steamed milk',4,'☕',''],['Iced Latte','Single-origin espresso, cold milk, ice',4.5,'🧋',''],['Cappuccino','Espresso, foamed milk, cocoa dust',4,'☕',''],['Matcha Latte','Ceremonial matcha, oat milk',5,'🍵','']]},
+Sweets:{c:'#f9cfd6',i:[['Brown Butter Cookie','Sea salt, dark chocolate chunks',3.5,'🍪','Baked daily'],['Lemon Tart','Crisp shell, tangy curd, meringue',5,'🍋',''],['Cinnamon Roll','Cream cheese glaze, warm from the oven',4.5,'🥐',''],['Berry Waffle','Whipped cream, maple, fresh berries',8,'🧇','']]}};
+const $=s=>document.querySelector(s),cart={};let cat='Burgers';
+const fmt=n=>'$'+n.toFixed(2);
+function tabs(){$('#tabs').innerHTML=Object.keys(M).map(k=>`<button class="tab" role="tab" aria-selected="${k==cat}" data-k="${k}">${k}</button>`).join('')}
+function grid(){$('#grid').innerHTML=M[cat].i.map((x,n)=>`<article class="item"><div class="pic" style="background:${M[cat].c}">${x[4]?`<span class="tag">${x[4]}</span>`:''}${x[3]}</div><div class="info"><h3>${x[0]}</h3><p>${x[1]}</p><div class="row"><span class="price">${fmt(x[2])}</span><button class="add" data-n="${n}" aria-label="Add ${x[0]}">+</button></div></div></article>`).join('')}
+function render(){const ids=Object.keys(cart);let t=0,c=0;
+$('#lines').innerHTML=ids.length?ids.map(id=>{const l=cart[id];t+=l.p*l.q;c+=l.q;return `<div class="ln"><span class="e">${l.e}</span><div><b>${l.n}</b><br><small>${fmt(l.p)}</small></div><div class="q"><button data-d="-1" data-id="${id}" aria-label="Less">−</button>${l.q}<button data-d="1" data-id="${id}" aria-label="More">+</button></div></div>`}).join(''):'<div class="empty">Your basket is empty.<br>Add something delicious.</div>';
+$('#tot').textContent=fmt(t);$('#cnt').textContent=c}
+function toast(m){const e=$('#toast');e.textContent=m;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove('on'),1800)}
+const drawer=o=>{$('#drawer').classList.toggle('open',o);$('#scrim').classList.toggle('open',o)};
+$('#tabs').onclick=e=>{const k=e.target.dataset.k;if(k){cat=k;tabs();grid()}};
+$('#grid').onclick=e=>{const b=e.target.closest('.add');if(!b)return;const x=M[cat].i[b.dataset.n],id=x[0];cart[id]=cart[id]||{n:x[0],p:x[2],e:x[3],q:0};cart[id].q++;render();toast(x[0]+' added')};
+$('#lines').onclick=e=>{const id=e.target.dataset.id;if(!id)return;cart[id].q+=+e.target.dataset.d;if(cart[id].q<1)delete cart[id];render()};
+$('#open').onclick=()=>drawer(true);$('#close').onclick=$('#scrim').onclick=()=>drawer(false);
+$('#co').onclick=()=>{if(!Object.keys(cart).length){toast('Add an item first');return}for(const k in cart)delete cart[k];render();drawer(false);toast('Order placed. See you soon!')};
+function bk(e){e.preventDefault();$('#bkb').textContent='Table requested ✓';setTimeout(()=>$('#bkb').textContent='Reserve',2500)}
+tabs();grid();render();
+</script>
 </body></html>
